@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+
+		<!-- Required Libraries
+		==========================-->
+		<script type="text/javascript" src="lib/three.min.js"></script>
+		<script type="text/javascript" src="lib/Detector.js"></script>
+		<script type="text/javascript" src="lib/OrbitControls.js"></script>
+
+		<!-- Photosphere Library
+		==========================-->
+		<script type="text/javascript" src="lib/Photosphere.js"></script>
+
+		<!-- Canvas Scale and positioning
+		==========================-->
+		<style type="text/css">
+			#canvas-background {
+			    position: fixed;
+			    top: 0;
+			    left: 0;
+			}
+		</style>
+
+		<title>Test page</title>
+		
+	</head>
+	<body>
+		<script type="text/javascript">
+			if (!Detector.webgl) {
+				Detector.addGetWebGLMessage();
+			} else {
+				// photosphere.init("URL for Photosphere");
+				// Images can be JPG, PNG, or GIF
+				Photosphere.init("Bear_Creek_Falls-Telluride_CO.jpg");
+			}
+		</script>
+	</body>
+</html>
